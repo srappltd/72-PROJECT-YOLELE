@@ -1,0 +1,142 @@
+@font-face {
+    font-family: as;
+    src: url(font/JornadaSans-Medium.woff2);
+}@font-face {
+    font-family: as1;
+    src: url(font/subset-Plakkaat-Italic.woff2);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: as1;
+    text-decoration: none;
+    color: black;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+/* // nav  */
+#nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  50px;
+    position: fixed;
+    top: 0;
+    /* background-color: aqua; */
+}
+#nav a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: black;
+    font-size: 1.4vmax;
+}
+#nav a span{
+    color: #EF531D;
+    font-size: 20px;
+}
+#nav a .equal{
+    font-size: 65px;
+    /* background-color: blueviolet; */
+    line-height: 1;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#nav a i{
+    font-family: as1;
+}
+#nav svg{
+    fill: #EF531D;
+    width: 23%;
+}
+/* // page 1  */
+#page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#page1 .circle{
+    width: 400vh;
+    height: 400vh;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,0%);
+}
+#page1 .circle-item{
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(0%,-50%);
+    transform-origin: 0% 50%;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    /* background-color: blueviolet; */
+}
+#page1 .circle-item .circle-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    padding-right: 2.3%;
+}
+#page1  .circle-item .circle-left img{
+    width:24%;
+    object-fit: cover;
+    rotate: 90deg;
+    cursor: pointer;
+    filter: drop-shadow(10px 10px 40px rgb(106, 106, 106));
+}
+#page1  .circle-item .circle-left p{
+    position: absolute;
+    z-index: 9999;
+}
+#page1 .scrolling{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    font-family: as;
+    font-size: 1.3vmax;
+    color: rgb(34, 34, 34);
+    transform: translate(-50%,0%);
+}
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+#page2 .img{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
